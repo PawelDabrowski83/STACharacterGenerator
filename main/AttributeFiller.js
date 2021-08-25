@@ -1,12 +1,7 @@
 function generateAttributes() {
-    while(!checkAttributes()) {
+    while(sumAttributes() < 56) {
         incrementRandomAttribute();
     }
-    console.log("Attributes set.");
-}
-
-function checkAttributes() {
-    return sumAttributes == 56;
 }
 
 function sumAttributes() {
@@ -24,6 +19,7 @@ function incrementRandomAttribute() {
     do {
         randomAttr = randomInteger(1, 6);
     } while(!isAttrIncrementable(getAttribute(randomAttr)));
+    incrementAttribute(randomAttr);
 }
 
 function isAttrIncrementable(value) {
