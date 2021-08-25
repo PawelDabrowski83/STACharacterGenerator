@@ -4,9 +4,9 @@ function clearField() {
 }
 
 function resetAttributes() {
-    attributesRange.setValue(LOWEST_ATTR);
+    attributesRange.setValue(7);
 }
 
 function resetDisciplines() {
-    disciplinesRange.setValue(LOWEST_DISC);
+    disciplinesRange.setValue(1);
 }
